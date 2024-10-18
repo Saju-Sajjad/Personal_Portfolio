@@ -1,0 +1,75 @@
+.footer-wrapper {
+    background-color: rgba(128, 128, 128, 0.1); /* Light gray background */
+    color: #1c1e1f; /* Text color */
+    padding: 50px 0 20px; /* Adjusted padding */
+    text-align: center;
+    margin: 30px auto; /* Centered margins */
+    width: 93%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Light top border */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: black;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 16px; /* Increased font size for better readability */
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #000; /* Link color */
+    text-decoration: none;
+    margin: 0 15px; /* Increased spacing between links */
+    font-weight: bold; /* Made links bold */
+    transition: color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.social-links a:hover {
+    color: #3498db; /* Change color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-wrapper {
+        padding: 30px 0 10px; /* Adjust padding for smaller screens */
+        margin: 20px 10px; /* Reduced margin for smaller screens */
+    }
+
+    .footer-content p {
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    .social-links {
+        margin-top: 15px; /* Increased spacing for better separation */
+    }
+
+    .social-links a {
+        margin: 0 10px; /* Reduced spacing between links */
+        font-size: 14px; /* Smaller font size for links */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-wrapper {
+        padding: 20px 0 5px; /* Further reduced padding */
+        margin: 15px 5px; /* Further reduced margin */
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Smaller font size for very small screens */
+    }
+
+    .social-links a {
+        margin: 0 5px; /* Further reduced spacing between links */
+        font-size: 12px; /* Smaller font size for links */
+    }
+}

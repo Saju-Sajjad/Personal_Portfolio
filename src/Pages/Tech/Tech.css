@@ -1,0 +1,102 @@
+/* Container Styles */
+.tech {
+  margin-top: 60px;
+  margin-left: 130px;
+  padding: 50px;
+  background-color: rgba(128, 128, 128, 0.101);
+  width: 93%;
+  box-sizing: border-box;
+}
+
+/* Section Header Styles */
+.tech h2 {
+  font-weight: bold;
+  color: #73a09e;
+  text-align: center;
+}
+
+/* Horizontal Rule Styles */
+.tech hr {
+  color: #138781;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* Card Styles */
+.tech .card {
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  background-color: #575f5e;
+  color: aliceblue;
+  transition: all 0.5s ease-in-out;
+}
+
+.tech .tech-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.tech .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #138781;
+  color: white;
+}
+
+
+@media (min-width: 700px) and (max-width:900px) {
+  .tech {
+    margin-left: 130px;
+    width: 93%;
+    padding: 20px;
+  }
+  .tech .tech-icon {
+    font-size: 15px;
+  }
+  .tech .card {
+    max-width: 420px;
+  }
+}
+@media (max-width: 768px) {
+  .tech {
+    margin-left: 143px;
+    width: 92%;
+    padding: 20px;
+  }
+  .tech .tech-icon {
+    font-size: 10px;
+  }
+  .tech .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech {
+    margin: 0;
+    width: 100%; /* Ensure this allows full width */
+    padding: 0;
+    margin-top: 45px;
+  }
+  .tech .card{
+    max-width: 440px;
+  }
+.row{
+  width: 100%;
+
+  margin-left: 1px;
+}
+.col{
+  width: 100%;
+  background-color: black;
+}
+
+
+
+  .tech hr {
+    width: 80%;
+  }
+}

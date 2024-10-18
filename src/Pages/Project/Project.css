@@ -1,0 +1,147 @@
+/* Project.css */
+
+/* Container Styles */
+.project {
+  margin: 50px 0;
+  background-color: rgba(128, 128, 128, 0.101);
+  margin-left: 130px;
+  width: 93%;
+}
+
+/* Section Header Styles */
+.project h2 {
+  font-weight: bold;
+  color: #138781;
+  text-align: center;
+}
+
+/* Horizontal Rule Styles */
+.project hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
+}
+
+/* Project Description Styles */
+.project p {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* Grid Container Styles */
+#ads {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Card Styles */
+.project .card {
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.project .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge Styles */
+.card-notify-badge {
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  background-color: #f29f67;
+  text-align: center;
+  border-radius: 30px;
+  color: black;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Image Styles */
+.project .card img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Overlay Styles */
+.card-image-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project .card:hover .card-image-overlay {
+  opacity: 1;
+}
+
+.card-detail-badge {
+  background-color: #e0b50e;
+  text-align: center;
+  border-radius: 30px;
+  color: black;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Button Styles */
+.ad-btn {
+  text-transform: uppercase;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #138781;
+  color: aliceblue;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 35px;
+  text-decoration: none;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.ad-btn:hover {
+  background-color: white;
+  color: #138781;
+  border: 2px solid #138781;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for small screens */
+@media (max-width: 600px) {
+  .project {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 45px;
+  }
+
+  .project hr {
+    width: 280px;
+  }
+
+  .project .card {
+    margin-top: 35px;
+  }
+}

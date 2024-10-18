@@ -1,0 +1,17 @@
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    color: #343a40; /* Dark text color */
+    font-size: 18px; /* Adjusted font size */
+    height: 50px; /* Increased height for better visibility */
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #dee2e6; /* Border to separate from content */
+  }
+  
+  .footer h4 {
+    margin: 0; /* Remove default margin for cleaner look */
+  }
+  

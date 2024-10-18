@@ -1,0 +1,108 @@
+/* Container and Layout Styles */
+.home-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    height: 50vh; /* Adjusted to take up half of the viewport height */
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.home-content h2 {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ff7f50;
+}
+
+.home-content h1 {
+    padding: 10px;
+    font-size: 40px;
+    color: #ffd700;
+}
+
+/* Button Styles */
+.home-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.home-buttons .btn-hire,
+.home-buttons .btn-cv {
+    background-color: #1e90ff;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-buttons .btn-cv {
+    background-color: #ff6347;
+}
+
+.home-buttons .btn-hire:hover,
+.home-buttons .btn-cv:hover {
+    transform: translateY(-5px);
+    background-color: #4b9cea;
+}
+
+.home-buttons .btn-cv:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive Media Queries */
+
+/* For Small Screens (up to 600px) */
+@media (max-width: 600px) {
+    .home-content h2 {
+        font-size: 24px; /* Reduce h2 font size */
+    }
+
+    .home-content h1 {
+        font-size: 28px; /* Smaller font size for h1 */
+    }
+
+    .home-buttons .btn-hire,
+    .home-buttons .btn-cv {
+        width: 100%; /* Full width buttons */
+        padding: 12px 20px; /* Reduced padding for smaller buttons */
+        font-size: 14px; /* Smaller font for better readability */
+    }
+
+    .home-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Reduce space between buttons */
+    }
+}
+
+/* For Medium Screens (600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .home-content h2 {
+        font-size: 28px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .home-buttons .btn-hire,
+    .home-buttons .btn-cv {
+        width: 80%;
+        padding: 14px 25px;
+        font-size: 16px;
+    }
+}
